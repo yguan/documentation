@@ -1,0 +1,95 @@
+@import "common";
+
+@side-menu-width: 250;
+@side-menu-li-width: @side-menu-width - 5;
+@section-left-padding: @side-menu-width + 20;
+
+body {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 14px;
+  color: #868c92;
+  .whitesmoke-background;
+  -webkit-print-color-adjust: exact;
+  margin: 0;
+}
+
+h4 {
+  margin: 0 0 10px 0;
+}
+
+.attention-text {
+  font-weight: bold;
+  color: orange;
+}
+
+.menu-li-a-common-style {
+  padding: 5px 10px;
+  display: block;
+}
+
+#menu {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 70;
+  padding: 0;
+  margin: 0;
+  width: ~'@{side-menu-width}px';
+
+  ul {
+    padding-left: 0;
+  }
+  li {
+    .inline-block;
+    .gray-border;
+    margin: 3px 0;
+    width: ~'@{side-menu-li-width}px';
+    background: transparent;
+
+    a {
+      text-decoration: none;
+      .gray-text;
+      .menu-li-a-common-style;
+
+      &.active {
+        background-color: #666;
+        .white-text;
+      }
+    }
+
+    &:hover {
+      .white-background;
+    }
+  }
+}
+
+.section-container {
+  .gray-text;
+  .default-font-size;
+  .default-line-height;
+  margin-left: ~'@{section-left-padding}px';
+
+  a {
+    text-decoration: none;
+    color: blue;
+    text-shadow: none;
+
+    &:hover {
+      color: green;
+      font-weight: bold;
+    }
+
+    ul {
+      margin: 0;
+    }
+  }
+  ul {
+    margin-top: 5px;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 15px;
+  }
+}

@@ -1,0 +1,145 @@
+.white-text {
+  color: white;
+}
+.black-text {
+  color: #000000;
+}
+.gray-text {
+  color: #263f3f;
+}
+.gray-border {
+  border: solid 1px gray;
+}
+.no-border {
+  border: none;
+}
+.default-font-size {
+  font-size: 16px;
+}
+.button-font-size {
+  font-size: 14px;
+}
+.white-background {
+  background-color: white;
+}
+.whitesmoke-background {
+  background-color: whitesmoke;
+}
+.inline-block {
+  display: inline-block;
+}
+.default-line-height {
+  line-height: 140%;
+}
+.cusor-pointer {
+  cursor: default;
+}
+.cursor-hand {
+  cursor: pointer;
+}
+.no-outline {
+  outline: none;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.circular {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+.hidden {
+  display: none;
+}
+::-webkit-scrollbar {
+  width: 16px;
+}
+::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+}
+body {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 14px;
+  color: #868c92;
+  background-color: whitesmoke;
+  -webkit-print-color-adjust: exact;
+  margin: 0;
+}
+h4 {
+  margin: 0 0 10px 0;
+}
+.attention-text {
+  font-weight: bold;
+  color: orange;
+}
+.menu-li-a-common-style {
+  padding: 5px 10px;
+  display: block;
+}
+#menu {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 70;
+  padding: 0;
+  margin: 0;
+  width: 250px;
+}
+#menu ul {
+  padding-left: 0;
+}
+#menu li {
+  display: inline-block;
+  border: solid 1px gray;
+  margin: 3px 0;
+  width: 245px;
+  background: transparent;
+}
+#menu li a {
+  text-decoration: none;
+  color: #263f3f;
+  padding: 5px 10px;
+  display: block;
+}
+#menu li a.active {
+  background-color: #666;
+  color: white;
+}
+#menu li:hover {
+  background-color: white;
+}
+.section-container {
+  color: #263f3f;
+  font-size: 16px;
+  line-height: 140%;
+  margin-left: 270px;
+}
+.section-container a {
+  text-decoration: none;
+  color: blue;
+  text-shadow: none;
+}
+.section-container a:hover {
+  color: green;
+  font-weight: bold;
+}
+.section-container a ul {
+  margin: 0;
+}
+.section-container ul {
+  margin-top: 5px;
+}
+.section-container .title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
